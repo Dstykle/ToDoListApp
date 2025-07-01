@@ -1,6 +1,8 @@
+//initializing variables for html ids
 const inputBox = document.getElementById('input-box')
 const listContainer = document.getElementById('list-container')
 
+//function to create a new task and add it to the list of tasks
 function addTask(){
     if(inputBox.value === ''){
         alert("You must write something!")
@@ -14,20 +16,14 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value = '';
-    saveData();
 }
-
+//if the click cam from the item then it will toggle to checked
+//or if it came from the span then it is the remove button
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-        saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
-        saveData();
     }
 }, false);
-
-function saveData(){
-    localStorage.setItem("data", listContainer.innerHTML)
-}

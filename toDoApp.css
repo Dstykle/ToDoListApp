@@ -1,6 +1,4 @@
-[v-cloak]{
-    display:none
-}
+
 form input{
     display: block;
     margin: 8px
@@ -13,7 +11,7 @@ form input{
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#153677,#4c085f);
+    background: linear-gradient(135deg,#4d4f52,#a796ac);
     padding: 10px;
 }
 .todo-app{
@@ -25,10 +23,11 @@ form input{
     border-radius: 10px;
 }
 .todo-app h2{
-    color: #002765;
+    color: #4f555e;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 50px;
 }
 .row{
     display: flex;
@@ -51,7 +50,7 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #3c3433;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
